@@ -2,7 +2,7 @@
 rotation.oninput = (e)=> box.style.transform = `rotate(${rotation.value}deg`; 
 
 
-if ("AmbientLightSensor" in window) {
+if (true) {
   const sensor = new AmbientLightSensor();
   sensor.addEventListener("reading", (event) => {
     light.innerText = "Current light level:" + sensor.illuminance;
